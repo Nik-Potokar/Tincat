@@ -23,7 +23,8 @@ p{
     color: #8f8f8f;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
+
 }
 
 
@@ -59,15 +60,19 @@ p{
 
 /* Title image */
 .head-image{
-    width: 48% ;
+    width: 50% ;
     transform: rotate(25deg);
-
+    z-index: 1;
+    position: absolute;
+    right: 30%;
 }
 /* Features */
 
 #features{
+    background-color: #fff;
     padding: 7% 15%;
-    
+    position: relative;
+    z-index: 1;
 
 }
 .feature-box{
@@ -120,28 +125,42 @@ p{
 }
 /* Pricing */
 
-#pricing{
-    padding: 7% 15%;
+#pricing{ 
     background-color: #fff   ;
     text-align: center;
 }
-.card-title{
-    color: black;
+.card-deck{
+    padding: 7% 15%;
+    
 
 }
-.text-muted{
-
+.card-deck{
+    margin: 0 auto;
 }
 .card-title{
     color: #ff4c68;
+    font-size: 2rem;
 
 }
+.card-body{
+    text-align: center;
+}
+.card-header{
+    color:#ff4c68
+}
+.pricing-box{
+}
+.btn-pricing{
+    margin: 5%;
+}
+
+
 /* Footer */
 
 #cta{
-        background-color: #ff4c68;
-        text-align: center;
-        padding: 7% 15%;
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
 
 }
 
@@ -157,6 +176,22 @@ p{
 }
 .copyright{
     background-color: black;
+    text-align: center;
     margin: 0;
     padding: 0;
+}
+
+/* Media quers */
+
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .head-image{
+        position: static;
+        transform: rotate(0);
+
+
+    
+    }
 }
