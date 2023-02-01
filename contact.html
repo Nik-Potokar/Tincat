@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tincat</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <body class="contact">
+
+      <div class="container-fluid">
+      
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand custom " href="index.html">Tincat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+            <li class="nav-item">
+                <a class="nav-link" href="download.html">Download</a>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <h1>FAQ</h1>
+    <div class="faq-section">
+        <h2></h2>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">What platforms is the app available on?</div>
+          <div class="answer">The app is currently available on both iOS and Android platforms.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Is there a cost to use the app?</div>
+          <div class="answer">The app is available for free on the App Store and Google Play, with optional in-app purchases available.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">How often are updates released for the app?</div>
+          <div class="answer">We release updates regularly to improve the user experience and add new features. Be sure to keep your app up to date for the best experience.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Can I use the app offline?</div>
+          <div class="answer">Some features of the app may be available offline, but an internet connection is required for full functionality.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Is the app secure?</div>
+          <div class="answer">Yes, the app is designed with security in mind and uses industry-standard encryption to protect your data. For more information on our security measures, please see our Privacy Policy.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">What is the process for reporting a bug or issue with the app?</div>
+          <div class="answer">If you encounter a bug or issue with the app, please contact our support team through the in-app support system or by emailing support@example.com. Our team will work to resolve the issue as quickly as possible.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">How do I get in touch with your customer support?</div>
+          <div class="answer">You can reach us through this contact form or by emailing us at support@example.com.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Do you offer refunds?</div>
+          <div class="answer">Yes, we offer refunds within 14 days of purchase. Please contact us for more information.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">How long does it take to receive a response to my inquiry?</div>
+          <div class="answer">We aim to respond to all inquiries within 24 hours.</div>
+        </div>
+        
+        <script>
+          function toggleAnswer(element) {
+            var answerElement = element.nextElementSibling;
+            if (answerElement.style.display === "block") {
+              answerElement.style.display = "none";
+            } else {
+              answerElement.style.display = "block";
+            }
+          }
+        </script>
+      </div>
+      <div class="contactuscontainer">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="6"  required></textarea>
+          </div>
+          
+          <script>
+            $("#message").on("input", function() {
+              $(this).height(0).height(this.scrollHeight);
+            });
+          </script>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      </div>
+
+
+
+
+
+<!-- Footer -->
+
+  <footer class="bg-dark py-3">
+    <div class="container">
+      <p class="text-center text-white">&copy; 2023 Tincat @Nik Potokar</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
+
+
